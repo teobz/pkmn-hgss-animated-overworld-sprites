@@ -8,6 +8,47 @@ Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four dir
 
 ---
 
+## Folder Structure
+
+```
+├── up/                 # Sprites facing up (north)
+├── down/               # Sprites facing down (south)
+├── left/               # Sprites facing left (west)
+├── right/              # Sprites facing right (east)
+├── by-pokemon/         # Sprites organised by Pokémon (symlinks)
+├── by-variant/         # Sprites organised by variant (symlinks)
+├── manifest.json       # Index of all sprites
+└── scripts/            # Generation scripts
+```
+
+### Access Patterns
+
+**By direction (original):** Browse `up/`, `down/`, `left/`, `right/` for sprites facing a specific direction.
+
+**By Pokémon:** Find all sprites for a specific Pokémon in `by-pokemon/{number}_{name}/`.
+
+**By variant:** Browse by type in `by-variant/{regular|shiny|female|forms}/`.
+
+### Manifest
+
+The `manifest.json` file contains a complete index of all sprites with metadata. Use this for programmatic access or to build custom views.
+
+### Regenerating Views
+
+To regenerate the manifest and symlink views, run:
+
+```bash
+python scripts/reorganise.py
+```
+
+To rollback changes:
+
+```bash
+python scripts/reorganise.py --rollback
+```
+
+---
+
 ## What's here
 
 This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001–493). Each sprite is a four-frame GIF animation facing up, down, left, or right.
