@@ -17,6 +17,7 @@ Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four dir
 ├── right/              # Sprites facing right (east)
 ├── by-pokemon/         # Sprites organised by Pokémon (symlinks)
 ├── by-variant/         # Sprites organised by variant (symlinks)
+├── by-direction/       # Directional sprite folders (generated)
 ├── manifest.json       # Index of all sprites
 └── scripts/            # Generation scripts
 ```
@@ -28,6 +29,8 @@ Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four dir
 **By Pokémon:** Find all sprites for a specific Pokémon in `by-pokemon/{number}_{name}/`.
 
 **By variant:** Browse by type in `by-variant/{regular|shiny|female|forms}/`.
+
+**By direction (consolidated):** All directional folders together in `by-direction/{up,down,left,right}/`.
 
 ### Manifest
 
