@@ -1,2 +1,5 @@
 # Superpowers documentation (local only)
 docs/superpowers/
+
+# Generated files
+manifest.json
