@@ -2,7 +2,7 @@
 docs/superpowers/
 
 # Root-level directional folders (moved to by-direction/)
-up/
-down/
-left/
-right/
+/up/
+/down/
+/left/
+/right/
