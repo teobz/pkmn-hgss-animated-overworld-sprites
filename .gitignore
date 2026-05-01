@@ -16,3 +16,6 @@
 !manifest-gif.json
 !manifest-png.json
 !.gitignore
+
+# Scripts directory (development/maintenance scripts)
+scripts/
