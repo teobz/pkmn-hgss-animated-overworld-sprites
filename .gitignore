@@ -1,0 +1,24 @@
+# Ignore everything except:
+# - APNG/
+# - GIF/
+# - README.md
+# - manifest-gif.json
+# - manifest-png.json
+
+*
+
+# But don't ignore these specific items
+!APNG/
+!APNG/**
+!GIF/
+!GIF/**
+!README.md
+!manifest-gif.json
+!manifest-png.json
+!.gitignore
+
+# Scripts directory (development/maintenance scripts)
+scripts/
+
+# macOS Finder metadata
+.DS_Store
