@@ -22,8 +22,8 @@ GIF/
 │   ├── down/
 │   ├── left/
 │   └── right/
-├── by-pokemon/         # Symlink view: all sprites for each Pokémon
-└── by-variant/         # Symlink view: sprites grouped by variant
+├── by-pokemon/         # Symlink view: all sprites for each Pokémon organised by number and name
+└── by-variant/         # Symlink view: sprites grouped by variant (regular, shiny, female, forms)
 ```
 
 ### APNG Format (`APNG/`)
