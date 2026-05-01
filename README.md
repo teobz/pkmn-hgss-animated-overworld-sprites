@@ -3,106 +3,98 @@
 Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four directions.\
 *Look at em' go!*
 
-![Quagsire down](down/195_down.gif) ![Quagsire up](up/195_up.gif) ![Quagsire left](left/195_left.gif) ![Quagsire right](right/195_right.gif)
-![Shiny Quagsire down](down/195_shiny_down.gif) ![Shiny Quagsire up](up/195_shiny_up.gif) ![Shiny Quagsire left](left/195_shiny_left.gif) ![Shiny Quagsire right](right/195_shiny_right.gif)
+![Quagsire down](GIF/by-direction/down/shiny/195_down.gif) ![Quagsire up](GIF/by-direction/up/shiny/195_up.gif) ![Quagsire left](GIF/by-direction/left/shiny/195_left.gif) ![Quagsire right](GIF/by-direction/right/shiny/195_right.gif)
 
 ---
 
-## Folder Structure
+## Contents
+
+### GIF Format (`GIF/`)
+
+Animated GIF sprites organized by variant:
 
 ```
-├── up/                 # Sprites facing up (north)
-├── down/               # Sprites facing down (south)
-├── left/               # Sprites facing left (west)
-├── right/              # Sprites facing right (east)
-├── by-pokemon/         # Sprites organised by Pokémon (symlinks)
-├── by-variant/         # Sprites organised by variant (symlinks)
-├── by-direction/       # Directional sprite folders (generated)
-├── manifest.json       # Index of all sprites
-└── scripts/            # Generation scripts
+GIF/
+├── by-direction/       # Source sprites organised by direction and variant
+│   ├── up/
+│   │   ├── regular/    # Regular sprites
+│   │   └── shiny/      # Shiny variants
+│   ├── down/
+│   ├── left/
+│   └── right/
+├── by-pokemon/         # Symlink view: all sprites for each Pokémon
+└── by-variant/         # Symlink view: sprites grouped by variant
 ```
 
-### Access Patterns
+### APNG Format (`APNG/`)
 
-**By direction (original):** Browse `up/`, `down/`, `left/`, `right/` for sprites facing a specific direction.
+Animated PNG sprites with identical structure to `GIF/`:
 
-**By Pokémon:** Find all sprites for a specific Pokémon in `by-pokemon/{number}_{name}/`.
-
-**By variant:** Browse by type in `by-variant/{regular|shiny|female|forms}/`.
-
-**By direction (consolidated):** All directional folders together in `by-direction/{up,down,left,right}/`.
-
-### Manifest
-
-The `manifest.json` file contains a complete index of all sprites with metadata. Use this for programmatic access or to build custom views.
-
-### Regenerating Views
-
-To regenerate the manifest and symlink views, run:
-
-```bash
-python scripts/reorganise.py
 ```
-
-To rollback changes:
-
-```bash
-python scripts/reorganise.py --rollback
+APNG/
+├── by-direction/       # Source PNG sprites
+├── by-pokemon/         # Symlink view
+└── by-variant/         # Symlink view
 ```
 
 ---
 
-## What's here
+## What's Included
 
-This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001–493). Each sprite is a four-frame GIF animation facing up, down, left, or right.
+This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001–493). Each sprite is a four-frame animation facing up, down, left, or right.
 
-The collection includes:\
-★ [Regular]() sprites for every Pokémon\
-★ [Shiny]() variants\
-★ [Female]() variants where applicable\
-★ [Form]() variations (Unown, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc.)\
+The collection includes:
+- **[Regular]()** sprites for every Pokémon (4 directions)
+- **[Shiny]()** variants (4 directions)
+- **[Female]()** variants where applicable (4 directions)
+- **[Form]()** variations (Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc.)
 
-## How the folders are organised
+---
 
+## Access Patterns
+
+**By source files**: Browse `GIF/by-direction/{direction}/{variant}/` or `APNG/by-direction/{direction}/{variant}/`
+
+**By Pokémon**: Find all sprites for a specific Pokémon in `GIF/by-pokemon/{number}_{name}/` or `APNG/by-pokemon/{number}_{name}/`
+
+**By variant**: Browse by type in `GIF/by-variant/{regular|shiny|female|forms}/`
+
+---
+
+## Sprite Names and Formats
+
+### Filename Convention (Source Files)
+
+Source files follow the pattern:
 ```
-├── down/       # Facing south
-├── up/         # Facing north
-├── left/       # Facing west
-├── right/      # Facing east
-└── animation_log.txt  # Generation log
+{number}_{variant}_{direction}.{ext}
 ```
 
-Each folder contains about 1,152 sprites.
+Examples:
+- `001_up.gif` — Bulbasaur facing up
+- `150_shiny_down.gif` — Shiny Mewtwo facing down
+- `003_female_left.gif` — Female Venusaur facing left
+- `201-a_right.gif` — Unown A facing right
+- `479-heat_up.gif` — Heat Rotom facing up
 
-## Filenames
+### Manifest Files
 
-Sprites follow a straightforward pattern:
+- `manifest-gif.json` — Complete index of all GIF sprites
+- `manifest-png.json` — Complete index of all PNG sprites
 
-```
-{number}_{variant}_{direction}.gif
-```
+Use these for programmatic access or to build custom views.
 
-Some examples:
-- `001_up.gif` ★ Bulbasaur facing up
-- `150_shiny_down.gif` ★ Shiny Mewtwo facing down
-- `003_female_left.gif` ★ Female Venusaur facing left
-- `201-a_right.gif` ★ Unown A facing right
-- `479-heat_up.gif` ★ Heat Rotom facing up
-
-## I have no idea if someone has done this already, but...
-
-I made these after searching for animated overworld sprites and only finding downward-facing ones (like on [Bulbapedia](https://archives.bulbagarden.net/w/index.php?title=Category:Overworld_sprites&filefrom=Ani001OD.png#mw-category-media)). I needed all four directions, so I wrote a Python script to combine the static frames from [Veekun's collection](https://veekun.com/dex/downloads) into animated GIFs.
-
-I'm sharing them here in case anyone else runs into the same problem.
+---
 
 ## Credits
 
-The original sprites come from [Veekun's Pokémon Project Downloads](https://veekun.com/dex/downloads). From their site:
+**Original sprite source**: [Veekun's Pokémon Project Downloads](https://veekun.com/dex/downloads)
 
+From Veekun:
 > You can use anything on this page however you want. Nintendo made these, not me, so I don't claim to own them in any way. If you want to credit me for collecting or ripping them, that's cool; if not, that's cool too. Enjoy.
 
-I'm planning to upload these to [Bulbapedia](https://archives.bulbagarden.net/w/index.php?title=Category:Overworld_sprites) when I have the chance, so they'll be more easily discoverable.
+These four-frame animated GIFs were created by combining static PNG frames from Veekun's HGSS overworld sprite collection using a Python script.
 
-*★ Feel free to use these sprites however you like. Credit is appreciated but not required! ★*
+---
 
-Anyways, have fun!
+*Feel free to use these sprites however you like. Credit is appreciated but not required!*
