@@ -1,7 +1,8 @@
 # Pokémon HGSS Animated Overworld Sprites ★
 
-Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four directions.\
-*Look at em' go!*
+Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four directions.
+
+### *Look at em' go!*
 
 ![Quagsire down](GIF/by-direction/down/regular/195_down.gif) ![Quagsire down](GIF/by-direction/down/shiny/195_shiny_down.gif) ![Quagsire up](GIF/by-direction/up/regular/195_up.gif) ![Quagsire up](GIF/by-direction/up/shiny/195_shiny_up.gif) ![Quagsire left](GIF/by-direction/left/regular/195_left.gif) ![Quagsire left](GIF/by-direction/left/shiny/195_shiny_left.gif) ![Quagsire right](GIF/by-direction/right/regular/195_right.gif) ![Quagsire right](GIF/by-direction/right/shiny/195_shiny_right.gif)
 
@@ -46,11 +47,60 @@ APNG/
 
 ---
 
+## What's Included
+
+This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001-493). Each sprite is a four-frame animation facing up, down, left, or right.
+
+The collection includes:\
+★ **[Regular](GIF/by-variant/regular)** sprites for every Pokémon (4 directions) - [APNG](APNG/by-variant/regular) \
+★ **[Shiny](GIF/by-variant/shiny)** variants (4 directions) - [APNG](APNG/by-variant/shiny) \
+★ **[Female](GIF/by-variant/female)** variants where applicable (4 directions) - [APNG](APNG/by-variant/female) \
+★ **[Form](GIF/by-variant/forms)** variations - Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc. - [APNG](APNG/by-variant/forms)
+
+---
+
+## Access Patterns
+
+**By source files**: Browse `GIF/by-direction/{direction}/{variant}/` or `APNG/by-direction/{direction}/{variant}/`
+
+**By Pokémon**: Find all sprites for a specific Pokémon in `GIF/by-pokemon/{number}_{name}/` or `APNG/by-pokemon/{number}_{name}/`
+
+**By variant**: Browse by type in `GIF/by-variant/{regular|shiny|female|forms}/`
+
+---
+
+## Sprite Names and Formats
+
+### Filename Convention (Source Files)
+
+Source files follow the pattern:
+```
+{number}_{variant}_{direction}.{ext}
+```
+
+Examples:\
+★ `001_up.gif` - Bulbasaur facing up \
+★ `150_shiny_down.gif` - Shiny Mewtwo facing down \
+★ `003_female_left.gif` - Female Venusaur facing left \
+★ `201-a_right.gif` - Unown A facing right \
+★ `479-heat_up.gif` - Heat Rotom facing up
+
+### Manifest Files
+
+★ `manifest-gif.json` - Complete index of all GIF sprites \
+★ `manifest-png.json` - Complete index of all PNG sprites
+
+Use these for programmatic access or to build custom views.
+
+---
 ## Windows Users: Symlink Configuration
+<details>
+
+<summary>Please expand to read!</summary>
 
 This repository uses symbolic links (`symlinks`) for the `by-pokemon/` and `by-variant/` folders. On Windows, you may need to enable Developer Mode or configure Git to handle symlinks properly.
 
-### Option 1: Enable Developer Mode (Recommended)
+### Option 1: Enable Developer Mode
 
 1. Open Settings → Update & Security → For developers
 2. Enable "Developer Mode"
@@ -76,53 +126,7 @@ If the above options don't work, use WSL:
 wsl
 git clone <repository-url>
 ```
-
----
-
-## What's Included
-
-This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001-493). Each sprite is a four-frame animation facing up, down, left, or right.
-
-The collection includes:
-- **[Regular]()** sprites for every Pokémon (4 directions)
-- **[Shiny]()** variants (4 directions)
-- **[Female]()** variants where applicable (4 directions)
-- **[Form](GIF/by-variant/forms)** variations - Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc. - [APNG](APNG/by-variant/forms)
-
----
-
-## Access Patterns
-
-**By source files**: Browse `GIF/by-direction/{direction}/{variant}/` or `APNG/by-direction/{direction}/{variant}/`
-
-**By Pokémon**: Find all sprites for a specific Pokémon in `GIF/by-pokemon/{number}_{name}/` or `APNG/by-pokemon/{number}_{name}/`
-
-**By variant**: Browse by type in `GIF/by-variant/{regular|shiny|female|forms}/`
-
----
-
-## Sprite Names and Formats
-
-### Filename Convention (Source Files)
-
-Source files follow the pattern:
-```
-{number}_{variant}_{direction}.{ext}
-```
-
-Examples:
-- `001_up.gif` - Bulbasaur facing up
-- `150_shiny_down.gif` - Shiny Mewtwo facing down
-- `003_female_left.gif` - Female Venusaur facing left
-- `201-a_right.gif` - Unown A facing right
-- `479-heat_up.gif` - Heat Rotom facing up
-
-### Manifest Files
-
-- `manifest-gif.json` - Complete index of all GIF sprites
-- `manifest-png.json` - Complete index of all PNG sprites
-
-Use these for programmatic access or to build custom views.
+</details>
 
 ---
 
@@ -135,6 +139,4 @@ From Veekun's page:
 
 These four-frame animated GIFs were created by combining static PNG frames from Veekun's HGSS overworld sprite collection using a Python script.
 
----
-
-*★ Feel free to use these sprites however you like. Credit is appreciated but not required! ★*
+*★ Feel free to use these sprites however you like. Credit is appreciated but not required. Have fun! ★*
