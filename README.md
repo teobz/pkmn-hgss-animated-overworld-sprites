@@ -23,7 +23,14 @@ GIF/
 │   ├── left/
 │   └── right/
 ├── by-pokemon/         # Symlink view: all sprites for each Pokémon
+│   └── 001_bulbasaur/
+│       ├── regular/
+│       └── shiny/
 └── by-variant/         # Symlink view: sprites grouped by variant
+    ├── regular/
+    ├── shiny/
+    ├── female/
+    └── forms/
 ```
 
 ### APNG Format (`APNG/`)
@@ -33,15 +40,41 @@ Animated PNG sprites with identical structure to `GIF/`:
 ```
 APNG/
 ├── by-direction/       # Source PNG sprites
-├── by-pokemon/         # Symlink view (same structure as GIF)
-│   └── 001_bulbasaur/
-│       ├── regular/
-│       └── shiny/
-└── by-variant/         # Symlink view (same structure as GIF)
-    ├── regular/
-    ├── shiny/
-    ├── female/
-    └── forms/
+├── by-pokemon/         # Symlink view
+└── by-variant/         # Symlink view
+```
+
+---
+
+## Windows Users: Symlink Configuration
+
+This repository uses symbolic links (`symlinks`) for the `by-pokemon/` and `by-variant/` folders. On Windows, you may need to enable Developer Mode or configure Git to handle symlinks properly.
+
+### Option 1: Enable Developer Mode (Recommended)
+
+1. Open Settings → Update & Security → For developers
+2. Enable "Developer Mode"
+
+### Option 2: Configure Git for Symlinks
+
+Run these commands in Git Bash or Command Prompt:
+
+```bash
+git config --global core.symlinks true
+git config --global core.autocrlf false
+```
+
+Then clone the repository again:
+```bash
+git clone --recurse-submodules <repository-url>
+```
+
+### Option 3: WSL (Windows Subsystem for Linux)
+
+If the above options don't work, use WSL:
+```bash
+wsl
+git clone <repository-url>
 ```
 
 ---
