@@ -11,7 +11,7 @@ Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four dir
 
 ### GIF Format (`GIF/`)
 
-Animated GIF sprites organized by variant:
+Animated GIF sprites organised by variant:
 
 ```
 GIF/
