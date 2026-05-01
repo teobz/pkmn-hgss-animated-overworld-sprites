@@ -47,7 +47,7 @@ The collection includes:
 - **[Regular]()** sprites for every Pokémon (4 directions)
 - **[Shiny]()** variants (4 directions)
 - **[Female]()** variants where applicable (4 directions)
-- **[Form]()** variations (Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc.)
+- **[Form](GIF/by-variant/forms)** variations — Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc. — [APNG](APNG/by-variant/forms)
 
 ---
 
