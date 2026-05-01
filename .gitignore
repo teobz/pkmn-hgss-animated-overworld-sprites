@@ -1,8 +1,18 @@
-# Superpowers documentation (local only)
-docs/superpowers/
+# Ignore everything except:
+# - APNG/
+# - GIF/
+# - README.md
+# - manifest-gif.json
+# - manifest-png.json
 
-# Root-level directional folders (moved to by-direction/)
-/up/
-/down/
-/left/
-/right/
+*
+
+# But don't ignore these specific items
+!APNG/
+!APNG/**
+!GIF/
+!GIF/**
+!README.md
+!manifest-gif.json
+!manifest-png.json
+!.gitignore
