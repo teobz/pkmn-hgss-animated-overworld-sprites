@@ -1,4 +1,4 @@
-# Pokémon HGSS Animated Overworld Sprites
+# Pokémon HGSS Animated Overworld Sprites ★
 
 Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four directions.\
 *Look at em' go!*
@@ -97,4 +97,4 @@ These four-frame animated GIFs were created by combining static PNG frames from 
 
 ---
 
-*Feel free to use these sprites however you like. Credit is appreciated but not required!*
+*★ Feel free to use these sprites however you like. Credit is appreciated but not required! ★*
