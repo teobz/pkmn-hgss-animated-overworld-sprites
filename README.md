@@ -7,7 +7,7 @@ Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four dir
 
 ---
 
-## Contents
+## Structure
 
 ### GIF Format (`GIF/`)
 
@@ -22,8 +22,8 @@ GIF/
 │   ├── down/
 │   ├── left/
 │   └── right/
-├── by-pokemon/         # Symlink view: all sprites for each Pokémon organised by number and name
-└── by-variant/         # Symlink view: sprites grouped by variant (regular, shiny, female, forms)
+├── by-pokemon/         # Symlink view: all sprites for each Pokémon
+└── by-variant/         # Symlink view: sprites grouped by variant
 ```
 
 ### APNG Format (`APNG/`)
@@ -33,8 +33,15 @@ Animated PNG sprites with identical structure to `GIF/`:
 ```
 APNG/
 ├── by-direction/       # Source PNG sprites
-├── by-pokemon/         # Symlink view
-└── by-variant/         # Symlink view
+├── by-pokemon/         # Symlink view (same structure as GIF)
+│   └── 001_bulbasaur/
+│       ├── regular/
+│       └── shiny/
+└── by-variant/         # Symlink view (same structure as GIF)
+    ├── regular/
+    ├── shiny/
+    ├── female/
+    └── forms/
 ```
 
 ---
@@ -90,7 +97,7 @@ Use these for programmatic access or to build custom views.
 
 **Original sprite source**: [Veekun's Pokémon Project Downloads](https://veekun.com/dex/downloads)
 
-From Veekun:
+From Veekun's page:
 > You can use anything on this page however you want. Nintendo made these, not me, so I don't claim to own them in any way. If you want to credit me for collecting or ripping them, that's cool; if not, that's cool too. Enjoy.
 
 These four-frame animated GIFs were created by combining static PNG frames from Veekun's HGSS overworld sprite collection using a Python script.
