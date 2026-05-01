@@ -3,7 +3,7 @@
 Animated overworld sprites from Pokémon HeartGold & SoulSilver for all four directions.\
 *Look at em' go!*
 
-![Quagsire down](GIF/by-direction/down/shiny/195_shiny_down.gif) ![Quagsire up](GIF/by-direction/up/shiny/195_shiny_up.gif) ![Quagsire left](GIF/by-direction/left/shiny/195_shiny_left.gif) ![Quagsire right](GIF/by-direction/right/shiny/195_shiny_right.gif)
+![Quagsire down](GIF/by-direction/down/regular/195_down.gif) ![Quagsire down](GIF/by-direction/down/shiny/195_shiny_down.gif) ![Quagsire up](GIF/by-direction/up/regular/195_up.gif) ![Quagsire up](GIF/by-direction/up/shiny/195_shiny_up.gif) ![Quagsire left](GIF/by-direction/left/regular/195_left.gif) ![Quagsire left](GIF/by-direction/left/shiny/195_shiny_left.gif) ![Quagsire right](GIF/by-direction/right/regular/195_right.gif) ![Quagsire right](GIF/by-direction/right/shiny/195_shiny_right.gif)
 
 ---
 
