@@ -81,13 +81,13 @@ git clone <repository-url>
 
 ## What's Included
 
-This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001–493). Each sprite is a four-frame animation facing up, down, left, or right.
+This is a complete set of animated overworld sprites for Generations 1 through 4 (Pokémon 001-493). Each sprite is a four-frame animation facing up, down, left, or right.
 
 The collection includes:
 - **[Regular]()** sprites for every Pokémon (4 directions)
 - **[Shiny]()** variants (4 directions)
 - **[Female]()** variants where applicable (4 directions)
-- **[Form](GIF/by-variant/forms)** variations — Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc. — [APNG](APNG/by-variant/forms)
+- **[Form](GIF/by-variant/forms)** variations - Unown letters, Castform, Deoxys, Rotom, Giratina, Shaymin, Arceus type forms, etc. - [APNG](APNG/by-variant/forms)
 
 ---
 
@@ -111,16 +111,16 @@ Source files follow the pattern:
 ```
 
 Examples:
-- `001_up.gif` — Bulbasaur facing up
-- `150_shiny_down.gif` — Shiny Mewtwo facing down
-- `003_female_left.gif` — Female Venusaur facing left
-- `201-a_right.gif` — Unown A facing right
-- `479-heat_up.gif` — Heat Rotom facing up
+- `001_up.gif` - Bulbasaur facing up
+- `150_shiny_down.gif` - Shiny Mewtwo facing down
+- `003_female_left.gif` - Female Venusaur facing left
+- `201-a_right.gif` - Unown A facing right
+- `479-heat_up.gif` - Heat Rotom facing up
 
 ### Manifest Files
 
-- `manifest-gif.json` — Complete index of all GIF sprites
-- `manifest-png.json` — Complete index of all PNG sprites
+- `manifest-gif.json` - Complete index of all GIF sprites
+- `manifest-png.json` - Complete index of all PNG sprites
 
 Use these for programmatic access or to build custom views.
 
